@@ -1,0 +1,10 @@
+# secrets
+.env
+
+# private notes — not part of the public repo
+NOTES.md
+NEXT.MD
+
+# python
+.venv/
+__pycache__/
