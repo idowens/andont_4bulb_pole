@@ -1,19 +1,19 @@
-<div align="center">
+```
+                    .-----.
+                    | (o) |  red
+                    |-----|
+                    | (o) |  orange
+                    |-----|
+                    | (o) |  green
+                    |-----|
+                    | (o) |  blue
+                    |-----|
+                    |#####|
+                    '--+--'
+                       |  USB
+```
 
-```
-        .-----.
-        | (o) |  red
-        |-----|
-        | (o) |  orange
-        |-----|
-        | (o) |  green
-        |-----|
-        | (o) |  blue
-        |-----|
-        |#####|
-        '--+--'
-           |  USB
-```
+<div align="center">
 
 # andont_4bulb_pole
 
