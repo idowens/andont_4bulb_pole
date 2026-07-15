@@ -1,18 +1,18 @@
 <div align="center">
 
 ```
-        ┌───┐
-        │ ● │  red
-        ├───┤
-        │ ● │  orange
-        ├───┤
-        │ ● │  green
-        ├───┤
-        │ ● │  blue
-        ├───┤
-        │▓▓▓│
-        └─┬─┘
-          │ USB
+        .-----.
+        | (o) |  red
+        |-----|
+        | (o) |  orange
+        |-----|
+        | (o) |  green
+        |-----|
+        | (o) |  blue
+        |-----|
+        |#####|
+        '--+--'
+           |  USB
 ```
 
 # andont_4bulb_pole
@@ -209,20 +209,20 @@ The translator (Claude `claude-sonnet-4-6`, structured output against a strict J
 ## Architecture
 
 ```
- "police lights, 30s"        HTTP POST /run
- ────────────────────▶  FastAPI (app.py)
-                             │
-                             ▼
+ "police lights, 30s"       HTTP POST /run
+ --------------------->  FastAPI (app.py)
+                             |
+                             v
                      Claude (structured output)
-                             │   [{mode, colors, on_ms, ...}, ...]
-                             ▼
-                     PatternRunner (patterns.py)     ◀── POST /reset preempts
-                             │   background thread, cancel-safe
-                             ▼
+                             |   [{mode, colors, on_ms, ...}, ...]
+                             v
+                     PatternRunner (patterns.py)   <-- POST /reset preempts
+                             |   background thread, cancel-safe
+                             v
                      AndonLight (andon.py)
-                             │   4-byte frames, ≥10ms apart
-                             ▼
-                     CH340 serial @ 9600 8N1 ──▶ 🚨 tower light
+                             |   4-byte frames, >=10ms apart
+                             v
+                     CH340 serial @ 9600 8N1  --->  tower light
 ```
 
 ## File map
