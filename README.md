@@ -21,7 +21,7 @@
 
 *"flash orange and green alternately for 1 minute, then run an all-color loop at 20ms per lamp"* → the pole does exactly that.
 
-![Python](https://img.shields.io/badge/python-3.11%2B-blue) ![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey) ![Hardware](https://img.shields.io/badge/hardware-CH340%20serial-green)
+![Python](https://img.shields.io/badge/python-3.11%2B-blue) ![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey) ![Hardware](https://img.shields.io/badge/hardware-CH340%20serial-green) ![License](https://img.shields.io/badge/license-MIT-blue)
 
 </div>
 
